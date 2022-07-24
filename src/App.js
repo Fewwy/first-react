@@ -5,9 +5,9 @@ function App() {
   return (
     <div>
       <Menu />
-      <p>
+      <h1>
         this is main page
-      </p>
+      </h1>
     </div>
   );
 }

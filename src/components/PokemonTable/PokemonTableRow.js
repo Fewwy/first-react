@@ -1,19 +1,32 @@
-import pokemon from '../../assets/pokemon.json'
 
-function PokemonTableRow() {
+function PokemonTableRow(props) {
     return (
         <tbody>
-        {/* переключаемся на JS */}
-        {pokemon.map((onepokemon) => (
-          //это уже HTML
-          <tr>
+        {props.pokemon.map((onepokemon, i) => (
+          <tr key={i}>
           <td>
-            {/* мы снова переключаемся на JS */}
             {onepokemon.name.english}
           </td>
           <td>
-            {/* мы снова переключаемся на JS */}
             {onepokemon.type.join(", ")}
+          </td>
+          <td>
+            {onepokemon.base['HP']}
+          </td>
+          <td>
+            {onepokemon.base['Attack']}
+          </td>
+          <td>
+            {onepokemon.base['Defense']}
+          </td>
+          <td>
+            {onepokemon.base['Sp. Attack']}
+          </td>
+          <td>
+            {onepokemon.base['Sp. Defense']}
+          </td>
+          <td>
+            {onepokemon.base['Speed']}
           </td>
         </tr>
         ))

@@ -2,17 +2,28 @@ import Menu from '../Menu/Menu';
 import PokemonTableHead from './PokemonTableHead';
 import PokemonTableRow from './PokemonTableRow';
 
+const tableHeaders = {
+  name: 'Name',
+  type: 'Type',
+  hp: 'HP',
+  attack: 'Attack',
+  defence:"Defense",
+  specialAttack: "Sp. Attack",
+  specialDefence:"Sp. Defense",
+  speed: "Speed"
+}
 
-function PokemonTable() {
+
+function PokemonTable(props) {
     return (
     <>
+      <Menu />
       <h1>
         Pokemon Table
       </h1>
-      <Menu />
       <table>
-      <PokemonTableHead name='Name' type='Type'/>
-      <PokemonTableRow />
+      <PokemonTableHead headers={tableHeaders}/>
+      <PokemonTableRow pokemon={props.pokemon}/>
       </table>
     </>
   )
