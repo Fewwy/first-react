@@ -12,7 +12,7 @@ function PokemonTable(props) {
       <Menu />
       <table>
         <PokemonTableHead headers={pokemonTableHeaders}/>
-        <PokemonTableRow pokemon={props.pokemon}/>
+        <PokemonTableRow />
       </table>
     </>
   )
