@@ -17,7 +17,8 @@
       "Sp. Attack": 65,
       "Sp. Defense": 65,
       "Speed": 45
-    }
+    },
+    "catchMark": true
   },
   {
     "id": 2,
@@ -220,7 +221,8 @@
       "Sp. Attack": 25,
       "Sp. Defense": 25,
       "Speed": 30
-    }
+    },
+    "catchMark": true
   },
   {
     "id": 12,
@@ -8554,7 +8556,8 @@
       "Sp. Attack": 60,
       "Sp. Defense": 30,
       "Speed": 85
-    }
+    },
+    "catchMark": true
   },
   {
     "id": 419,
@@ -12215,7 +12218,8 @@
       "Sp. Attack": 24,
       "Sp. Defense": 86,
       "Speed": 10
-    }
+    },
+    "catchMark": true
   },
   {
     "id": 598,
